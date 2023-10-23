@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/StyleLogin.css">
+</head>
+<body>
+
+    <form class="formulario" id="formulario" action="../PHP/Login.php" method="post">
+        <!-- Login Header -->
+        <div class="head">
+            <span>WebSenior</span>
+            <p>Introduzca sus datos para accesar</p>
+        </div>
+    
+        <!-- Correo -->
+    <div class="userintroduce">
+        <div class="formulario__grupo" id="grupo__correo">
+            <label class="etiquetas" for="usuario">Usuario</label>
+                <div>
+                    <input class="contenido1" type="text" name="usuarioini" id="usuario" placeholder="Yo me llamo.." maxlength="50" required> 
+                </div>
+        </div>
+    </div>
+    
+     <!-- Contraseña -->
+     <div class="password">
+        <div class="formulario__grupo " id="grupo__password">
+            <label class="etiquetas" for="password">Contraseña</label>
+                <div>
+                    <input class="contenido2" type="password" name="passwordini" id="password" maxlength="10" required>
+                </div>
+        </div>
+    </div>
+    
+
+        <div>
+            <input class="Entrar" type="submit" value="Entrar a WebSenior" name="login">
+        </div>
+        
+        <div>
+        <a href="../INDEX.HTML">Si no tienes una cuenta deberás regresar y te ayudaremos a crear una. <br>solo clickea u oprime este mensaje</a>
+        </div>
+        <br> <br>
+
+        </form>
+    
+</body>
+</html>
