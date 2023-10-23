@@ -1,0 +1,159 @@
+body{
+    background-color: rgb(37, 150, 190);
+}
+
+@font-face {
+    font-family: Gagalin;
+    src: url('../Fonts/Gagalin-Regular.otf') format('truetype');
+}
+
+@font-face {
+    font-family: Sailor;
+    src: url(../Fonts/Sailors.otf) format(truetype);
+}
+
+.logo{
+    display: flex;
+    width: auto;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.separacion{
+    width: 80%;
+    height: 8px;
+    margin: auto;
+    background-color: black;
+    
+}
+
+.cont1{
+    display: block;
+    text-align: center;
+    width: auto;
+    max-width: 1200px;
+    height: 1100px;
+    background: lightgray;
+    opacity: 0.6;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 40px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 1000px 20px rgb(96,96,96);        /*X, Y , radio difuminado, dispercion difuminado*/
+}
+
+.titulo{
+    width: 100%;
+    height: 80px;
+    font-family: 'Sailor';
+    font-weight: bold;
+}
+
+.titulo p{
+    color: black;
+    padding: 30px;
+    font-size: 60px;
+}
+
+.instrucciones1{
+    width: 100%;
+    height: 100px;
+    font-family: 'Sailor';
+    font-size: 20px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+
+.instrucciones2{
+    width: 100%;
+    height: 50px;
+    font-family: 'Sailor';
+    font-size: 25px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+
+.ejemplo{
+    display: flex;
+    height: 500px;
+}
+
+.instrucciones3{
+    width: 90%;
+    height: 200px;
+    font-family: 'Sailor';
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 50px;
+    padding-top: 10px;
+}
+
+.instrucciones4{
+    width: 85%;
+    height: 200px;
+    font-family: 'Sailor';
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 50px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.cont2{
+    height: 300px;
+}
+
+.Imagen{
+    translate: 0 -70px;
+    height: 400px;
+}
+
+.instrucciones5{
+    width: 100%;
+    height: 50px;
+    font-family: 'Sailor';
+    font-size: 25px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.botones{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+}
+
+#bclickuoprimir{
+    width: 750px;
+    font-size: 30px;
+}
+
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #085078 0%, #85D8CE  51%, #085078  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }

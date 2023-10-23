@@ -1,0 +1,124 @@
+body{
+    background-color: rgb(37, 150, 190);
+}
+
+@font-face {
+    font-family: Gagalin;
+    src: url('../Fonts/Gagalin-Regular.otf') format('truetype');
+}
+
+@font-face {
+    font-family: Sailor;
+    src: url(../Fonts/Sailors.otf) format(truetype);
+}
+
+.cont1{
+    display: block;
+    text-align: center;
+    width: auto;
+    max-width: 1200px;
+    height: 1100px;
+    background: lightgray;
+    opacity: 0.6;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 40px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 1000px 20px rgb(96,96,96);        /*X, Y , radio difuminado, dispercion difuminado*/
+}
+
+.titulo{
+    width: 100%;
+    height: 15%;
+    font-family: 'Gagalin';
+}
+
+.titulo p{
+    color: black;
+    padding: 50px;
+    font-size: 70px;
+}
+
+.separacion{
+    width: 80%;
+    height: 8px;
+    margin-left: 100px;
+    background-color: black;
+    
+}
+
+.instrucciones1{
+    width: 100%;
+    height: 20%;
+    font-family: 'Sailor';
+    font-size: 20px;
+    padding-top: 50px;
+}
+
+.instrucciones2{
+    width: 100%;
+    height: 20%;
+    font-family: 'Sailor';
+    font-size: 25px;
+    padding-top: 10px;
+    font-weight: bold;
+
+}
+
+.simbolo{
+    display: block;
+    width: 100%;
+    height: 20%;
+    transform: rotate(180deg);
+}
+
+#animacion{
+    position: absolute;
+    size: 200px;
+    font-size: 100px;
+    padding: 140px;
+    translate: -50px ;
+    padding-left: 5px ;
+
+}
+
+
+.botones{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+}
+
+#bEmpezar{
+    width: 450px;
+    font-size: 30px;
+}
+
+#bInicio{
+    width: 450px;
+    font-size: 30px;
+}
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #085078 0%, #85D8CE  51%, #085078  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
