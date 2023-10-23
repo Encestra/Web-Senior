@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..//CSS/Stylei3.css">
+</head>
+
+<!--Encabezado-->
+<header>
+    <div class="logo">
+        <img src="..//Img/Logo.png" alt="LOGO">
+    </div>
+    <div class="separacion">
+    
+    </div>
+</header>
+
+<!--Cuerpo-->
+<body>
+<form action="../PHP/Insertar_user.php" method="post" id="formRegistro">
+    <div class="cont1">
+        <div class="titulo">
+            <p>!HOLA¡</p>
+        </div>
+        <div class="instrucciones1">
+            <h3>Vamos a crear una cuenta dentro de WebSenior</h3>
+            <p>¿Podrías decirnos cuál es tu nombre o como quieres que te llamemos? <br> solo debes de escribirlo en el recuadro blanco.</p>
+        </div>
+        <div class="cont2">
+            <input type="text" placeholder="Yo soy o quiero llamarme..." id="Usuario" name="Usuario" required>
+        </div>
+        <div class="instrucciones1">
+            <p>¿Cuál será tu contraseña? <br> solo debes de escribirla en el recuadro, no te preocupes está sera secreta.
+            <br>Es importante que recuerdes la contraseña que colocarás para que sigas aprendiendo con nosotros</p>
+        </div>
+        <div class="cont2">
+            <input type="text" placeholder="Mi contraseña sera..." id="Contraseña" name="password" required>
+        </div>
+        <div class="instrucciones1">
+            <p>Cuando hayas acabado de escribir tu nombre y contraseña <br> Por favor selecciona el botón de "Aceptar" y selecciona el cuadro a un lado del texto <br> "Acepto terminos y condiciones" 
+                para empezar este emocionante viaje.</p>
+        </div>
+        <div class="condiciones">
+            <a href="Terminos.html" target="_blank"><input type="checkbox" required>Acepto términos y condiciones</a>
+        </div>        
+        <div class="botones">
+            <!-- Aquí se hizo el cambio. Se eliminó el enlace y se dejó solo el botón de envío. -->
+            <input type="submit" value="Aceptar" class="btn-grad" id="bAceptar">
+        </div>
+    </div>
+</form>
+</body>
+
+<script>
+    // Cuando se cambia el nombre de usuario, se guarda en localStorage
+    document.getElementById('Usuario').addEventListener('change', function() {
+        localStorage.setItem('Usuario', this.value);
+    });
+
+    // Al enviar el formulario, se valida que los campos no estén vacíos
+    document.getElementById('formRegistro').addEventListener('submit', function(event) {
+        var usuario = document.getElementById('Usuario').value;
+        var password = document.getElementById('Contraseña').value;
+        
+        if (!usuario || !password) {
+            event.preventDefault();
+            alert('Por favor, completa todos los campos');
+        }
+    });
+</script>
+
+</html>

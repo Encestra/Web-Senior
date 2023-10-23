@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="..//CSS/StyleAyuda.css">
+</head>
+<body>
+
+    <!--Encabezado-->
+<header>
+    <div class="cont1"> 
+        <div class="subpaginas">
+            <a href="..//HTML/Perfil.php">Perfil</a>
+        </div>
+        <div class="subpaginas">
+            <a href="..//HTML/Blog.html">Blog</a>
+        </div>
+        <div class="subpaginas">
+            <a href="Principal.html"><img src="..//Img/Logo.png" alt="Logo del sitio" id="logo"></a>
+        </div>
+        <div class="subpaginas">
+            <a href="..//HTML/Cursos.html">Cursos</a>
+        </div>
+        <div class="subpaginas">
+            <a href="..//HTML/Ayuda.html">Ayuda</a>
+        </div>
+    </div>
+</header>
+    
+  <!--Separacion-->
+
+  <div class="separacion">
+</div>
+
+<div class="cuerpo">
+
+    <div class="tarjeta">
+        <div class="t1">
+            <p id="titulo">Si presentas algun problema con la pagina puedes volver a ver el manual de inicio, solo clickea u oprime el siguiente icono</p>
+        </div>
+        <div class="t2"> 
+            <a href=""><i class="fa-solid fa-book-open-reader fa-lg" style="color: #ffffff;" id="Enlace"></i></a>
+        </div>
+<!-- --------- APARTADO DE DUDAS ---------- -->
+<script>
+            function validarFormulario() {
+                var textoDuda = document.getElementById("dudas").value.trim();
+        
+                if (textoDuda === "") {
+                    alert("Tu duda está vacío. Por favor, ingresa tu duda antes de enviar el formulario.");
+                    return false; // Evita enviar el formulario
+                }
+            }
+        </script>
+<!-- Recuadro para enviar dudas -->
+<form action="../PHP/Duda.php" method="post" onsubmit="return validarFormulario()">
+    <div class="t3">
+        <label for="dudas" id="etiqueta">Si tu duda no fue resuelta con el manual, puedes escribir aquí si tienes otra duda y ayudarnos a responderte de mejor manera</label>
+        <textarea name="texto_duda" id="dudas" cols="30" rows="10"></textarea><br>
+    </div>
+    <div class="t4">
+        <input type="submit" value="Enviar mi duda" class="btn-grad" id="grabacion">
+    </div>
+</form>
+<!-- ------------------- -->
+        
+    </div>
+
+</div>
+
+<div class="redes">
+    <div class="logored">
+        <i class="fa-brands fa-facebook-f" style="color: #6ea9c5;"></i>
+    </div>
+    <div class="logored">
+        <i class="fa-brands fa-twitter" style="color: #6ea9c5;"></i>
+    </div>
+    <div class="logored">
+        <i class="fa-brands fa-tiktok" style="color: #6ea9c5;"></i>
+    </div>
+    <div class="logored">
+        <i class="fa-brands fa-instagram" style="color: #6ea9c5;"></i>
+    </div>
+</div>
+
+
+</body>
+
+<script src="https://kit.fontawesome.com/236ba2aa1a.js" crossorigin="anonymous"></script>
+</html>
