@@ -1,0 +1,218 @@
+body{
+   background-color:  rgba(110, 169, 197, 0.65);
+
+}
+
+@font-face {
+    font-family: Commons;
+    src: url(../Fonts/TT\ Commons\ DemiBold.otf) format(truetype);
+}
+
+.head{
+    text-align: center;
+}
+
+.formulario{
+    display: block;
+    text-align: center;
+    width: auto;
+    max-width: 800px;
+    height: auto;
+    background: whitesmoke;
+    margin: auto;
+    margin-top: 150px;
+    border-radius: 20px;
+    font-family: 'Commons';
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 30px 10px lightslategrey;        /*X, Y , radio difuminado, dispercion difuminado*/
+}
+
+.formulario input:focus{
+    border: 3px solid rgb(37, 150, 190);
+    outline: none;
+    box-shadow: 3px 0px 30px gainsboro;
+}
+
+.formulario p{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.formulario span{
+    color: black;
+    font-size: 60px;
+    font-weight: bold;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.formulario__input-error{
+font-size: 12px;
+margin-bottom: 0px;
+display: none;
+}
+
+.formulario__input-error-activo{
+    display: block;
+}
+
+.formulario__validacion{
+    position: absolute;
+    margin-top: 18px;
+    margin-left: -30px;
+    z-index: 100;
+    font-size: 20px;
+    opacity: 0;
+}
+
+.formulario__grupo{
+    width: 99%;
+}
+
+.formulario__grupo-correcto .formulario__validacion{
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .etiquetas{
+    color: #bb2929;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion{
+    color: #bb2929;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .contenido1{
+    border: 3px solid #bb2929; 
+}
+.formulario__grupo-incorrecto .contenido2{
+    border: 3px solid #bb2929; 
+}
+
+
+.formulario__mensaje{
+    height: 45px;
+    line-height: 45px;
+    background-image: linear-gradient(to right, #cb2d3e 0%, #e65245  51%, #e43a15  100%);
+    padding: 0 15px;
+    border-radius: 6px;
+    display: none;
+}
+
+.formulario__mensaje-activo{
+    display: block;
+}
+
+.etiquetas{
+    display: block;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/*Nombre Completo*/
+
+.userintroduce{
+    display: flex ;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.contenido1{
+    position:relative;
+    height: 25px;
+    line-height: 25px;
+    width: 90%;                                         /* ajusta el tamaño de los imputs a la ventana*/
+    background: white;                               /* cambia el color de fondo de los imputs .*/
+    padding: 5px;                                      /* esopacio entre el contenido del elemento y su borde con sus modigicaiones left, bottom... etc*/
+    border-radius: 8px;
+    margin-top: 10px;                                  /* redondea las esquinas del imput manejando la curva por radio*/ 
+    margin-bottom: 30px;                               /*Establece la anchura del margen inferior de los elementos de bloque*/
+    border: 1px solid black;                         /* cambia el ancho y color de los inputs.*/    
+    font-family: 'Commons';                              /* cambia el tipo de letra de los inputs.*/
+    font-size: 20px;                                     /* cambia el tamñano de la letra de los inputs.*/
+    color: black;                                    /* cambia el color de la letra de los inputs.*/
+    transition: .3s ease all;
+    text-align: center;
+    text-transform: none;
+    
+}
+
+/*Contraseña*/
+
+.password{
+    display: flex ;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+.contenido2{
+    position:relative;
+    height: 25px;
+    line-height: 25px;
+    width: 90%;                                         /* ajusta el tamaño de los imputs a la ventana*/
+    background: white;                               /* cambia el color de fondo de los imputs .*/
+    padding: 5px;                                      /* esopacio entre el contenido del elemento y su borde con sus modigicaiones left, bottom... etc*/
+    border-radius: 8px;
+    margin-top: 10px;                                  /* redondea las esquinas del imput manejando la curva por radio*/     
+    margin-bottom: 40px;                            /*Establece la anchura del margen inferior de los elementos de bloque*/
+    border: 1px solid black;                         /* cambia el ancho y color de los inputs.*/    
+    font-family: 'Commons';                              /* cambia el tipo de letra de los inputs.*/
+    font-size: 20px;                                     /* cambia el tamñano de la letra de los inputs.*/
+    color: black;                                    /* cambia el color de la letra de los inputs.*/
+    transition: .3s ease all;
+    text-align: center;
+    text-transform: none;
+    
+}
+
+
+
+/*Enlaces*/
+
+.formulario a{
+    margin: auto;
+    padding-bottom: 50px;
+    color: black;
+    text-decoration: none;                              /*quita subrayado del url*/
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.formulario a:hover{                                    /*esta clase con la funcion hover hace que al realizar un evento en este caso pasar el raton por encima del objeto "a" se muestre la decoracion del texto*/
+    color: rgb(37, 150, 190);;
+    text-decoration: underline;                         /*pone subrayado del url al pioner el puntero*/
+}
+
+
+/*Botones*/
+   
+.Entrar{
+    background-image: linear-gradient(to right, #085078 0%, #85D8CE  51%, #085078  100%);
+    width: 80%;
+    height: 80px;
+    border:none;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: 0.5s;                           /*Velocidad de cammbio d*/
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;
+  }
+
+  .Entrar:hover {
+    background-position: right center; 
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+           

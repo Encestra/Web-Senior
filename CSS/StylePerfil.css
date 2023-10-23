@@ -1,0 +1,268 @@
+body{
+    background: url(..//Img/FONDO.jpeg);
+    width: 100%;
+    height: 900px;
+    margin-top: auto;
+    min-width: 750px;
+}
+
+@font-face {
+    font-family: Commons;
+    src: url(../Fonts/TT\ Commons\ DemiBold.otf) format(truetype);
+}
+
+.cont1{
+    display: flex;
+    width: 100%;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    justify-content: center;
+}
+
+.cont1 a{
+    color: black;
+}
+
+.cont1 a:hover{
+ color:rgb(37, 150, 190) ;
+}
+
+.subpaginas{
+    display: flex;
+    width: 20%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Commons';
+    font-weight: bold;
+}
+
+#logo{
+    width: 85%;
+    height: 90%;
+}
+
+.separacion{
+    width: 100%;
+    height: 8px;
+    background-color: black;
+}
+
+.contenedor{
+    margin: auto;
+    margin-top: 30px;
+    background-color: whitesmoke;
+    height: 780px;
+    width: 95%;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .25);
+}
+
+.datos{
+    display: flex;
+    width: 100%;
+    height: 45%;
+
+}
+
+.foto{
+    width: 20%;
+    height: 95%;
+    margin: auto;
+
+}
+
+.preview{
+    width: 100%;
+    height: 90%;
+    margin: auto;
+    border: 2px solid black;
+   
+}
+
+.subirimg{
+    position: relative;
+    width: 100%;
+    height:10%;
+    border: none;
+    border-radius: 6px;
+}
+
+.subirimg:hover {
+    cursor: pointer;
+}
+ 
+#file{
+display: none;
+}
+
+.nombre{
+text-align: center;
+margin: auto;
+font-family:'Commons';
+font-size: 20px;
+width: 50%;
+height: 95%;
+
+}
+
+
+.avance{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    
+    width: 90%;
+    height: 10%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.avance2{
+    display: block;
+    justify-content: space-around;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.progress{
+    width: 90%;
+    height: 10%;
+    background-color: rgba(110, 169, 197, 0.65);
+    
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #8e9eab 0%, #eef2f3  51%, #8e9eab  100%);
+    padding: 10px 15px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: black;            
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .25);
+    border-radius: 6px;
+    border-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    height: 10%;
+    max-height: 5600pc;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; 
+    color: rgb(37, 150, 190);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+  }
+
+.text{
+    width: 90%;
+    height: 10%;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.text2{
+    width: 90%;
+    height: 5%;
+    margin: auto;
+    
+    text-align: center;
+    font-size: 18px;
+}
+
+.contactodatos{
+    width: 90%;
+    height: 32%;
+    margin: auto;
+    
+}
+
+.contacto{
+display: flex;
+width: 90%;
+height: 30%;
+margin: auto;
+margin-top: 30px;
+justify-content: space-around;
+
+}
+
+.correo{
+    width: 35%;
+    height: 100%;
+    
+}
+
+.correo input{
+    margin: auto;
+    margin-top: 15px;
+    width: 100%;
+    height: 50%;
+    font-size: 18px;
+    font-family: 'Commons';
+    text-align: center;
+}
+
+.telefono{
+    width: 35%;
+    height: 100%;
+    
+}
+
+.telefono input{
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+    width: 100%;
+    height: 50%;
+}
+
+.actualizar{
+    width: 90%;
+    height: 20%;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.btn-grad2 {
+    background-image: linear-gradient(to right, #8e9eab 0%, #eef2f3  51%, #8e9eab  100%);
+    padding: 10px 15px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: black;            
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .25);
+    border-radius: 6px;
+    border-style: none;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    height: 70%;
+    max-height: 5600pc;
+  }
+
+  .btn-grad2:hover {
+    background-position: right center; 
+    color: rgb(37, 150, 190);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+  }
